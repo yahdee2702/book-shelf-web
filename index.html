@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Bookshelf Website</title>
+		<link rel="stylesheet" href="css/index.css" />
+		<link
+			rel="stylesheet"
+			href="https://fonts.googleapis.com/icon?family=Material+Icons"
+		/>
+	</head>
+	<body>
+		<header>
+			<div id="jumbotron">
+				<img src="assets/images/thumbnail.jpg" alt="Thumbnail" />
+				<figure>
+					<h1>Book.in</h1>
+					<figcaption>Store your books.</figcaption>
+				</figure>
+			</div>
+
+			<nav>
+				<h1>Book.in</h1>
+
+				<div id="search">
+					<i class="material-icons search-button">search</i>
+
+					<input type="text" placeholder="Search..." required />
+
+					<i class="material-icons close-button">close</i>
+				</div>
+			</nav>
+		</header>
+
+		<main>
+			<div id="bookstore" class="container">
+				<h1>Bookshelf</h1>
+
+				<div class="shelf">
+					<div class="tab">
+						<li for="incompleted-bookshelf" class="choosen-tab">Incompleted</li>
+						<li for="completed-bookshelf">Completed</li>
+					</div>
+					<div class="tab-content">
+						<div id="incompleted-bookshelf" class="bookshelfs">
+							<h2>Incompleted</h2>
+							<div class="book-storage"></div>
+						</div>
+
+						<div id="completed-bookshelf" class="bookshelfs">
+							<h2>Completed</h2>
+							<div class="book-storage"></div>
+						</div>
+					</div>
+				</div>
+			</div>
+
+			<div id="insert-button">
+				<i class="material-icons">add</i>
+			</div>
+
+			<div id="pop-up" hidden>
+				<div id="insert-book">
+					<h2>Insert a Book</h2>
+					<form id="form-insert-book" action="#">
+						<div class="form-group">
+							<label for="title">Title</label>
+							<input
+								type="text"
+								id="title"
+								required
+								placeholder="Input the title"
+							/>
+						</div>
+						<div class="form-group">
+							<label for="author">Author</label>
+							<input
+								type="text"
+								id="author"
+								required
+								placeholder="Input the author"
+							/>
+						</div>
+						<div class="form-group">
+							<label for="date">Date</label>
+							<input
+								type="date"
+								id="date"
+								required
+								placeholder="Give the Date"
+							/>
+						</div>
+						<div class="form-group">
+							<label for="finished">Finished</label>
+							<input type="checkbox" id="finished" />
+						</div>
+						<input type="submit" id="submit" />
+					</form>
+				</div>
+			</div>
+		</main>
+
+		<footer>Made by Muhammad Yahdi Ilham Fahmi and 🖤</footer>
+		<script src="js/index.js" defer></script>
+		<script src="js/data-manager.js" defer></script>
+	</body>
+</html>
